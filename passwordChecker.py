@@ -28,7 +28,7 @@ def pwned_api_check(password: str) -> int:
 
     return get_password_leak_count(result, tail)
 
-
+###############
 def main(args):
     for password in args:
         count:int = pwned_api_check(password)
